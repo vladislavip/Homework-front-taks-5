@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./Images/stars.gif);
+    
+}
+img{
+
+    width: 100%;
+    height: 100%;
+}
+.sun
+{
+    width: 50px;
+    position: absolute;
+    top: 378px;
+    left: 376px;
+
+}
+
+.container{
+
+    width: 800px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    
+}
+
+.orbit{
+    border: 0.5px dashed yellow;
+
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    animation-name: rotate;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+.planet{
+
+
+position: absolute;
+border-radius: 100%;
+z-index: 2;
+
+
+}
+
+.neptune.orbit{
+    width: 640px;
+    height: 640px;
+    
+}
+
+.neptune.planet
+{
+    width: 40px;
+    top: 70px;
+    left: 80px
+
+}
+.uranus.orbit
+{ 
+    width: 560px;
+    height: 560px;
+}
+
+.uranus.planet
+{
+    width: 40px;
+    top: -18px;
+    left: 230px
+
+}
+
+.saturn.orbit
+{
+    width: 480px;
+    height: 480px;
+    
+}
+
+.saturn.planet
+{
+
+    width: 70px;
+    top: 465px;
+    left: 230px
+    
+
+}
+
+.jupiter.orbit
+{
+
+    width: 400px;
+    height: 400px;
+
+}
+
+.jupiter.planet
+{
+    width: 60px;
+    top: 90px;
+    right: -14px
+    
+
+}
+.mars.orbit
+{
+    width: 320px;
+    height: 320px;
+
+}
+
+.mars.planet
+{
+    width: 35px;
+    top: 90px;
+    left: -10px
+    
+}
+
+.earth.orbit
+{
+    width: 240px;
+    height: 240px;
+
+}
+.earth.planet
+{
+    width: 35px;
+    top: 200px;
+    left: 29px
+}
+
+.venus.orbit
+{
+    width: 160px;
+    height: 160px;
+
+}
+
+.venus.planet
+{
+    width: 35px;
+    top: 138px;
+    left: 60px
+}
+
+.mercury.orbit{
+    width: 80px;
+    height: 80px;
+
+}
+
+.mercury.planet
+{
+    width: 20px;
+    top: 5px;
+    left: 58px
+}
+
+
+@keyframes rotate{
+
+    from {rotate: 0deg;}
+    to {rotate: 360deg;} 
+
+}
+
+
+
+
